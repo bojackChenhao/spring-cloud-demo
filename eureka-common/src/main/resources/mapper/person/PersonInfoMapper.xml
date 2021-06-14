@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.eurekacommon.mapper.PersonInfoMapper">
+<!--    <cache-ref namespace="com.example.eurekacommon.mapper.PersonInfoMapper"/>-->
+<!--    <cache type="com.example.eurekacommon.pojo.PersonInfo"></cache>-->
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.eurekacommon.pojo.PersonInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="age" property="age" />
+        <result column="address" property="address" />
+        <result column="uscc" property="uscc" />
+    </resultMap>
+
+</mapper>

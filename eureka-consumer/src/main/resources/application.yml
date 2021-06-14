@@ -1,0 +1,19 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: eureka-consumer
+  main:
+    # 默认是 false
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: 192.168.0.221
+    port: 5672
+    username: admin
+    password: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
